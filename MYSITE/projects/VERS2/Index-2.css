@@ -1,0 +1,646 @@
+.header
+{
+width: 100%;
+height: 100px auto;
+align-items: center;
+font-family: Tahoma;
+font-size: 100%;
+color: rgb(255, 255, 255);
+background-color: rgba(33, 39, 48, 0.9);
+text-decoration: none;
+display:inline-flex;
+margin: 2px;
+padding: 2px;
+column-width: auto;
+position: fixed;
+}
+
+p
+{
+    font-size: 120%; 
+    margin-bottom: 2%;
+}
+
+.header2
+{
+width: 100%;
+height: 100px auto;
+align-items: center;
+font-family: Tahoma;
+font-size: 100%;
+color: rgb(255, 255, 255);
+background-color: rgba(34, 9, 9, 0.9);
+text-decoration: none;
+display:inline-flex;
+margin: 2px;
+padding: 2px;
+column-width: auto; 
+position: fixed;  
+}
+
+
+.logoStart
+{
+margin-top: 40%;
+position:absolute;
+width: 200px;
+height: 300px;
+background-image: url("LogoShop_START.svg");
+background-repeat: no-repeat;
+background-position: top center;
+transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+transition: width .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+transition: height .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+
+}
+
+.logoStart:hover {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+width: 500px;
+height: 600px;
+background-repeat: no-repeat;
+background-position: top center;
+}
+
+
+
+.kol2_start
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+    height: auto;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+
+
+
+input
+{
+    width: 300px; 
+    height: 30px;
+    margin-bottom: 1%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.user_name,
+.user_sname,
+.user_from,
+.user_email,
+.user_tel
+{
+font-size: 12px;
+width: 300px; 
+height: 30px;
+margin: 0 auto;
+justify-content: center;
+text-align: center;
+}
+
+
+.input1,
+.input2,
+.input3,
+.input4,
+.input5
+{
+
+   color: #000000c5;
+
+}
+
+
+.user_box_1,
+.user_box_2,
+.user_box_3,
+.user,
+.user1,
+.user2,
+.user3,
+.user4,
+.user5
+{
+color: #ffffff;
+margin: 2%;
+text-align: center;
+}
+
+
+.logo
+{
+    width: 120px;
+    height: auto; 
+    margin: 5px;
+}
+
+
+.icon
+{
+    width: 50px;
+    height: auto; 
+    margin: 1px;  
+}
+
+.golova
+{
+width: 80%;
+height: auto;
+top: 30px;
+left: 50px;
+margin-left: 3%;
+}
+
+
+body 
+{
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 10pt;
+    line-height: 1.3;   /* МЕЖДУСТРОЧНЫЙ ИНТЕРВАЛ */
+    background-image: url("image/top4_chees.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100hv;
+
+}
+
+
+.hamon
+{
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 10pt;
+    line-height: 1.3;   /* МЕЖДУСТРОЧНЫЙ ИНТЕРВАЛ */
+    background-image: url("image/Hamon__fon.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100hv;
+
+}
+
+
+
+.main
+{
+margin-top: 10.5%;
+display: inline-flex;
+padding-top: 5px;   /*Отступ тут сверху*/
+width: 100%;
+
+}
+
+.kol1
+{
+    
+    display: block;
+    background: linear-gradient(90deg, rgba(109, 109, 110, 0.2) 0%, rgba(79, 84, 102, 0.16) 20%, rgb(173, 181, 182, 0.66) 100%);
+    width: 18%;
+    height: auto;
+    margin: 2px;
+    padding: 5px;
+    text-align:center;
+    border-radius: 5px;
+
+}
+
+.kol2
+
+{
+    
+    display:inline-block;
+    background: linear-gradient(270deg, rgba(64, 64, 65, 0.2) 0%, rgba(79, 84, 102, 0.16) 35%, rgb(173, 181, 182, 0.66) 100%);
+    width: 80%;
+    height: auto;
+    margin: 2px;
+    padding: 5px;
+    column-width: auto;    
+    border-radius: 5px;
+   
+
+
+}
+
+
+.kol2-1
+
+{
+    
+    display:inline-block;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+
+.kol3
+
+{
+    
+    display: inline-block;
+
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid rgb(119, 119, 119, 0.3);
+    border-radius: 3px;
+    border-bottom-left-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+h1
+{
+
+margin: 0px;
+text-transform: uppercase;     /*ВЕРХНИЙ РЕГИСТР*/
+font-size: 20pt;
+font-style:inherit;
+text-align: center;
+
+
+}
+
+p
+{
+
+    margin: 1px;
+    padding: 1px;
+    text-align:center;
+}
+
+.nav
+{
+text-decoration: none;
+display: block;
+font-size: 100%;
+text-transform: uppercase;     /*ВЕРХНИЙ РЕГИСТР*/
+padding-bottom: 5%;
+justify-content:center;   /*Занимают крайник позиции контейнера*/
+align-items: center;   /*по центру блока (по высоте*/
+margin: 2px;
+padding: 2px;
+text-align:center;
+line-height: 2;  
+
+}
+
+
+.btn     /*КНОПА*/
+
+{
+display: block;
+padding: 10px 15px;   /*Размер блока 10-10 верх низ, 15-15 слева справа*/
+color: #000000;
+transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+text-decoration: none;
+font-size: 120%;
+border-radius: 3px;
+
+}
+
+
+.btn_user:hover,
+.btn:hover {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5)
+
+}
+
+.btn_3user,
+.btn_2user,
+.btn_user
+{
+display: block;
+padding: 3%;
+background-color: #6e6e6e91;
+color: #000000;
+transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+text-decoration: none;
+font-size: 100%;
+border-radius: 3px;
+width: 100%;
+margin: 8% auto;}
+
+
+.btn_user:hover,
+.btn_2user:hover {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5)
+
+}
+
+img
+{
+padding-top: 0%;
+padding-left: 0%;
+padding-right: 0%;
+padding-bottom: 0%;
+max-width: 100%;
+
+
+}
+
+.container
+{
+width: 335px;
+height: 250;
+display: block;
+
+
+}
+
+
+.btn2     /*КНОПА*/
+
+{
+vertical-align: top;
+color: #131a30;
+transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+text-decoration: none;
+
+}
+
+
+.btn2:hover {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5)
+
+}
+
+.tel
+
+{
+    justify-content: center; 
+    padding-top: 25px;
+    display: inline-block;
+    align-items: center;
+    margin:0px auto; 
+    text-align:center;
+    font-size: 14pt, 80%;
+}
+
+footer
+{
+
+    max-width: 1920px;
+    margin: 5em 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+    top: 10px; 
+    bottom: 10px;
+    left: 10px; 
+    right: 10px; 
+    justify-content: center; 
+}
+
+.adress
+
+{
+    justify-content: center; 
+    margin: 10px;
+    padding: 10px;
+    top: 10px; 
+    bottom: 10px;
+    left: 10px; 
+    right: 10px; 
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+
+}
+
+
+.topImage__1
+.topImage__2
+.topImage__3
+.topImage__4
+.topImage__5
+.topImage__6
+
+{
+margin: 2px;
+padding: 2px;
+width: 250px;
+height:auto;
+background-color: rgba(255, 255, 255, 0.05);
+border-color:rgba(255, 255, 255, 0.5);
+}
+
+.imgFotoTop
+{
+width: 100%;
+height: auto;
+left: 30px;
+
+}
+
+.topImage__1:hover
+.topImage__2:hover 
+.topImage__3:hover 
+.topImage__4:hover 
+.topImage__5:hover 
+.topImage__6:hover  {   
+    background-color: rgba(0, 0, 0, 0.2)
+
+}
+
+/*   для окон */
+
+
+
+
+
+
+
+
+
+.show-modal1,
+.show-modal2,
+.show-modal3,
+.show-modal4,
+.show-modal5,
+.show-modal6
+{
+font-size: 2rem;
+font-weight: 600;
+padding: 1.75rem 3.5rem;
+margin: 5rem 2rem;
+border: none;
+background-color: beige;
+color: rgb(73, 73, 73);
+border-radius: 5rem;
+cursor: pointer;
+}
+
+
+.hidden
+{
+display: none;
+}
+
+.modal1,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal6
+ {
+
+position: absolute;
+top: 5%;
+right: 10%;
+left: 20%;
+transform: translate(-20%, - 20%);
+width: 60%;
+height: auto;
+background-color: rgba(255, 255, 255, 0.5);
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 3rem 5rem rgb(0, 0, 0, 0.3);
+z-index: 10;
+}
+
+.overlay
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 150%;
+background-color: rgb(0, 0, 0, 0.6);
+backdrop-filter: blur(3px);
+
+
+}
+
+
+.close-modal1,
+.close-modal2,
+.close-modal3,
+.close-modal4,
+.close-modal5,
+.close-modal6
+{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        border: 2px solid;
+        border-color: rgb(49, 49, 49, 0);
+        border-radius: 3px;
+        padding: 3px 5px;   /*Размер блока 10-10 верх низ, 15-15 слева справа*/
+        color: #ffffff;
+        background-color: rgb(197, 187, 255, 0);
+        transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+        transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+}       
+        .close-modal1:hover,
+        .close-modal2:hover,
+        .close-modal3:hover,
+        .close-modal4:hover,
+        .close-modal5:hover,
+        .close-modal6:hover
+        {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+            color: rgb(0, 0, 0);
+            background-color: rgb(68, 68, 68);
+        
+        }
+
+
+
+.next-modal1,
+.next-modal2,
+.next-modal3,
+.next-modal4,
+.next-modal5,
+.next-modal6
+{
+        position: absolute;
+        top: 95%;
+        right: 5%;
+        border: 2px solid;
+        border-radius: 3px;
+        border-color: rgb(0, 5, 31, 0);
+        padding: 3px 5px;   /*Размер блока 10-10 верх низ, 15-15 слева справа*/
+        color: #ffffff;
+        background-color: rgb(41, 41, 41, 0);
+        transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+        transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+}       
+        .next-modal1:hover,
+        .next-modal2:hover,
+        .next-modal3:hover,
+        .next-modal4:hover,
+        .next-modal5:hover,
+        .next-modal6:hover
+        {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+            color: rgb(14, 14, 14);
+            background-color: rgb(255, 255, 255);
+        
+        }
+
+
+        
+
+        .back-modal1,
+        .back-modal2,
+        .back-modal3,
+        .back-modal4,
+        .back-modal5,
+        .back-modal6
+        {
+                position: absolute;
+                top: 95%;
+                left: 5%;
+                border: 2px solid;
+                border-radius: 3px;
+                border-color: rgb(0, 5, 31, 0);
+                padding: 3px 5px;   /*Размер блока 10-10 верх низ, 15-15 слева справа*/
+                color: #ffffff;
+                background-color: rgb(41, 41, 41, 0);
+                transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+                transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+        }       
+                .back-modal1:hover,
+                .back-modal2:hover,
+                .back-modal3:hover,
+                .back-modal4:hover,
+                .back-modal5:hover,
+                .back-modal6:hover
+                {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+                    color: rgb(14, 14, 14);
+                    background-color: rgb(255, 255, 255);
+                
+                }
+
+
+
+
+
+
+
+
+

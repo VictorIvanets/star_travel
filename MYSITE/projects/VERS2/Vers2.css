@@ -1,0 +1,206 @@
+body 
+{
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 10pt;
+    line-height: 1.3;   /* МЕЖДУСТРОЧНЫЙ ИНТЕРВАЛ */
+    background-image: url("fon1_Proba3.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+
+}
+
+
+
+
+.blok_first
+{
+    
+    color: rgb(19, 4, 11);
+    background-color:rgb(241, 203, 156);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+    text-align:center;  /* ЦЕНтрирует текст (ВЫКЛЮЧКА)*/
+    font-family: Arial;
+
+
+}
+
+.blok_second
+
+{
+    padding-top: 2%; /*Отступ - сверху*/
+    color: #770707;
+    width: 100%;
+    max-width: 500px;
+    height: max-content;
+    margin: 80px auto;   /*Ставит блок по центру траницы*/
+    flex-direction: column;
+    justify-content: center;    /*Делает по центру блока (по высоте)*/
+    display:flex
+}
+
+*, *:before, *:after
+{
+box-sizing: border-box;
+}
+
+
+.container {
+top: 200px;
+width: 100%;
+max-width: 1200px;
+height: max-content;
+margin: 0 auto;
+}
+
+.intro
+{
+    width: 100%;
+    height: max-content;
+    text-align:center     
+
+}
+
+
+
+
+
+.header
+
+{
+padding-top: 5px;   /*Отступ тут сверху*/
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+}
+
+.header-logo
+
+{
+font-family:'Gill Sans';
+font-size: 50pt;
+width: 250px;
+height: auto;
+
+
+}
+
+
+.header-inner
+{
+display: flex;
+justify-content: space-between;   /*Занимают крайник позиции контейнера*/
+align-items: center;   /*по центру блока (по высоте*/
+
+}
+
+
+
+nav
+{
+font-size: 14pt;
+text-transform: uppercase;     /*ВЕРХНИЙ РЕГИСТР*/
+padding-bottom: 5%;
+
+}
+
+
+.nav__link
+
+{
+color: blueviolet;
+text-decoration: none;
+transition: color .3s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, что в nav__link на другой, что в .nav__link:hover {   */
+display: inline-block;
+vertical-align: top;
+margin: 0 30px;
+position:relative
+
+}
+
+
+.nav__link:hover {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+    color: black;
+}
+
+
+
+.nav__link:after {     /*Добавляет полоску под ссылку, если резко, то display: none; если плавно, то opacity:0, как поменял, .nav__link:hover:after заменить нужно display: block; тоже на opacity:1---2---3///, заменю*/
+
+content: "";            /*  рисует блоки (4-5 строчек снизу)   мержин ставит на место       margin: 60px auto 0      сверху 60пх, слева и справа auto (центр), снизу 0  */ 
+display: block;
+width: 100%;
+height: 5px;
+background-color: rgb(19, 20, 20);
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1;
+opacity: 0;
+transition: opacity .5s; Linear;   /* ПЛАВНЫЙ ПЕРЕХОД с одного на другое*/
+
+}
+
+
+
+
+.nav__link:hover:after {     /*Показывает при наведении, если в .nav__link:after стоит display: none;*/
+    opacity: 5;
+}
+
+
+
+.btn     /*КНОПА*/
+
+{
+display: inline-block;
+vertical-align: top;
+border: 2px solid;
+border-color: black;
+padding: 10px 15px;   /*Размер блока 10-10 верх низ, 15-15 слева справа*/
+color: #770707;
+background-color: rgb(197, 187, 255);
+transition: color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой  ТЕКСТ  суб клас:hover {   */
+transition: background-color .5s linear;  /* ПЛАВНЫЙ ПЕРЕХОД с одного цвета, на другой ФОН!!!  */
+
+}
+
+
+.btn:hover {     /*Менеяет цвет при наведении с того цвета что в .nav__link */
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 3, 32);
+
+}
+
+
+.slider {
+padding-top: 3%;
+display: flex;
+align-items: center;
+height: 25px;
+justify-content:space-between
+
+
+}
+
+.slider__item
+{
+
+width: 20%;
+margin: 0 auto;
+padding-bottom: 10px;
+
+}
+
+
+
+
+/* <img src="LogoShop.svg"  alt="LogoVector"  height="130px" width=auto>                   https://www.youtube.com/watch?v=ltMSrSis9ww      21min 32s  */
