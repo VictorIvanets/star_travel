@@ -1,142 +1,55 @@
-@font-face 
-    font-family: "helv"
-    src: url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype")
-    font-weight: normal
-    font-style: normal
-    
-@font-face 
-    font-family: "helvT"
-    src: url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype")
-    font-weight: normal
-    font-style: normal
-    
-
-@font-face 
-    font-family: "Helvet Bold"
-    src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype")
-    font-weight: normal
-    font-style: normal
-    
-
-  
-@font-face 
-    font-family: "Comfortaa-Light"
-    src: url("../fonts/Comfortaa-Light.ttf") format("truetype")
-    font-weight: normal
-    font-style: normal
-  
-
-@font-face 
-    font-family: "Comfortaa-Medium"
-    src: url("../fonts/Comfortaa-Medium.ttf") format("truetype")
-    font-weight: normal
-    font-style: normal
-    
-*, ::after, ::before
-    box-sizing: border-box
+@import "abstract/varible.sass"
+@import "abstract/mixin.sass"
+@import "base/animation.sass"
+@import "base/base.sass"
+@import "base/typography.sass"
+@import "base/utilites.sass"
+@import "layout/grid.sass"
+@import "layout/header.sass"
+@import "layout/navigator.sass"
+@import "pages/home.sass"
+@import "componentes/button.sass"
+@import "componentes/image.sass"
+@import "componentes/users.sass"
 
 
 
-html
+
+
+ 
+@media (max-width: 1200px) 
+  html 
     font-size: 62.5%
 
+@media (max-width: 1100px) 
+  html 
+    font-size: 55%
+
+@media (max-width: 1000px) 
+  html 
+    font-size: 45%
+
+@media (max-width: 900px) 
+  html 
+    font-size: 40%
+
+@media (max-width: 700px) 
+  html 
+    font-size: 30%
+@media (max-width: 500px) 
+  html 
+    font-size: 18%
+
   
-body  
-    background-color: rgb(179, 179, 179)
-    padding: 5rem
-    font-size: 1.6rem
-    font-family: "helv"
+    
     
 
-.container
-    background-color: rgb(255, 255, 255)
-
-.header  
-    height: 95vh
-    background: linear-gradient(30deg, rgba(0, 0, 0, 1) 20%, rgba(2,0,2,0.1) 40%, rgba(2,0,2,0.1) 40%, rgba(0, 0, 0, 1) 99%), url(../img/mark-basarab-1OtUkD_8svc-unsplash.jpg) center / cover no-repeat
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%)
-   
-
-    &__logo
-        position: relative
-        width: 25rem
-        top: 5rem
-        left: 5rem
-    &__box
-        width: 50%
-        text-align: center
-        margin: 0 auto
-        position: relative
-        top: 20%
-        
-        animation-name: LeftToRight
-        animation-duration: 3s
-        backface-visibility: hidden // убирает просвечевание и "дёргание"
-        // animation-delay: 1s //задержка
-        // animation-timing-function: ease-in // плавный старт
-        h1
-            font-family: "Helvet Bold"
-            font-size: 4rem
-            letter-spacing: 0.3rem
-            color: rgb(202, 202, 202)
-            span
-                font-family: "helv"
-        h2
-            font-family: "helvT"
-            font-size: 3rem
-            letter-spacing: 0.3rem
-            margin-bottom: 3rem
-            color: rgb(202, 202, 202)
-
-@keyframes LeftToRight
-    0%
-        opacity: 0
-        top: 60%
-        scale: 50%
 
 
-    100%
-        opacity: 1
-        top: 20%
-        scale: 100%
 
-.btn
-    &:link, &:visited
-        position: relative
-        width: 13rem
-        text-decoration: none
-        color: rgb(80, 80, 80)
-        background: white
-        border-radius: 2rem
-        font-family: "helv"
-        padding: 1rem 2rem
-        display: inline-block
-        transition: all .1s
-        font-size: 2rem
-    &:hover
-        color: rgb(0, 0, 0)
-        &::after
-            opacity: 0
-            transform: scale(2)
-            height: 200%
-            width: 100%
-            border-radius: 10rem
-    &:active
-        transform: translateY(0.2rem)
-        box-shadow: 0rem -0.2rem .4rem .1rem rgb(20, 20, 20)
-        scale: 98%
-    &::after
-        content: ""
-        background: rgb(125, 218, 255)
-        width: 100%
-        height: 100%
-        border-radius: 2rem
-        display: inline-block
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
-        transition: All .5s
+
+
+
         
 
         
